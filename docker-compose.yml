@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  vetty_api:
+    build: .
+    container_name: vetty_api
+    ports:
+      - "8000:8000"
+    environment:
+      - JWT_SECRET=supersecret123
+    restart: always
